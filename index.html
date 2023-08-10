@@ -32,25 +32,26 @@
 
 
     <div id="button-container">
-        <nav>
-            <button>+</button>
-            <button>-</button>
-            <button>×</button>
-            <button>÷</button>
-            <button>^</button>
-            <button>√</button>
-            <button>π</button>
-            <button>e</button>
-            <button>(</button>
-            <button>)</button>
-            <label for="from">From:</label>
-            <input type="text" class="bound-inputs" id="from">
+        <nav id="integral-nav">
+            <div class="d-flex justify-content-between">
+                <button class="btn ops" id="+">+</button>
+                <button class="btn ops" id="-">-</button>
+                <button class="btn ops" id="×">×</button>
+                <button class="btn ops" id="÷">÷</button>
+                <button class="btn ops" id="^">^</button>
+                <button class="btn ops" id="√">√</button>
+                <button class="btn ops" id="π">π</button>
+                <button class="btn ops" id="e">e</button>
+                <button class="btn ops" id="(">(</button>
+                <button class="btn ops" id=")">)</button>
+                <label for="from">From:</label>
+                <input type="text" class="bound-inputs" id="from">
 
-            <label for="to">To:</label>
-            <input type="text" class="bound-inputs" id="to">
-
-
+                <label for="to">To:</label>
+                <input type="text" class="bound-inputs" id="to">
+            </div>
         </nav>
+
         <label for="integrand-input"></label>
         <input type="text" placeholder="Estimate the integral of..." id="integrand-input">
         \[∫sin(4x)cos^2(x)dx\]
@@ -60,5 +61,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
+    <script src="client.js"></script>
 </body>
 </html>

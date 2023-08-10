@@ -20,7 +20,8 @@
 }
 
 .bound-inputs {
-    width: 40px
+    width: 40px;
+    height: 30px;
 }
 
 #integrand-input {
@@ -28,3 +29,6 @@
     margin-top: 100px;
 }
 
+#integral-nav {
+
+}
