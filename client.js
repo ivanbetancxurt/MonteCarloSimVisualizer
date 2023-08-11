@@ -37,3 +37,9 @@ document.getElementById('(').addEventListener('click', () => {
 document.getElementById(')').addEventListener('click', () => {
     document.getElementById('integrand-input').value += ')';
 });
+
+document.getElementById('integrand-input').addEventListener('input', () => {
+    var integrandInput = document.getElementById('integrand-input').value;
+    document.getElementById('integral').innerText = '\\[∫' + integrandInput + ' dx\\]';
+    MathJax.typesetPromise();
+})
